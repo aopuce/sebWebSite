@@ -1,0 +1,17 @@
+$susy: (
+  columns: 8,
+  container: 1140px,
+  global-box-sizing: border-box,
+  debug: (image: show)
+);
+
+@include border-box-sizing;
+
+img {
+  max-width: 100%;
+}
+.warp {
+  @include container();
+  padding-left: 5%;
+  padding-right: 5%;
+}

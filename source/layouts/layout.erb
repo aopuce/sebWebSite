@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Sebastian De Gobbis" %></title>
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900,400italic,900italic|Roboto:400,100,900,100italic,400italic,900italic' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag :normalize %>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <div id="loader-wrapper">
+        <div id="loader">
+          <span id="loader-1"></span>
+          <span id="loader-2"></span>
+          <span id="loader-3"></span>
+        </div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    <header>
+      <h1><%= link_to("Sebastian De Gobbis", "http://www.sebastiandegobbis.com")%></h1>
+      <button class="btn menu">
+          <span class="backbuttn"></span>
+          <span class="text">Menu</span>
+          <span class="x1-45"></span>
+          <span class="x2-45"></span>
+        </button>
+      <nav>
+        <ul>
+          <li><%= new_link_to("Home", "/") %></li>
+          <li><%= new_link_to("Opere", "/opere.html") %></li>
+          <li><%= new_link_to("Biografia", "/bio.html") %></li>
+          <li><%= new_link_to("Contatti", "/contatti.html") %></li>
+        </ul>
+        <%= link_to("Facebook", "https://www.facebook.com/sebastian.degobbis.artist") %>
+        <%= link_to("G+", "https://plus.google.com/112598431490420206575") %>
+      </nav>
+    </header>
+    <%= yield %>
+    <%= partial "footer" %>
+  </body>
+</html>
