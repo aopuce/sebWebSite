@@ -4,7 +4,6 @@ $susy: (
   global-box-sizing: border-box,
   debug: (image: show)
 );
-<<<<<<< HEAD
 $tablet: 600px;
 $desktop: 980px;
 @include border-box-sizing;
@@ -12,17 +11,11 @@ body, html {
   width: 100%;
   height: 100%;
 }
-=======
-
-@include border-box-sizing;
-
->>>>>>> d18bc4fdee9cc8e2ee58ec20e0f1bfd9fd6f3ab4
 img {
   max-width: 100%;
 }
 .warp {
   @include container();
-<<<<<<< HEAD
   padding-left: 2%;
   padding-right: 2%;
   @include breakpoint($tablet) {
@@ -107,8 +100,4 @@ figure {
   @include display-flex;
   @include align-items(center);
   @include justify-content(center);
-=======
-  padding-left: 5%;
-  padding-right: 5%;
->>>>>>> d18bc4fdee9cc8e2ee58ec20e0f1bfd9fd6f3ab4
 }
