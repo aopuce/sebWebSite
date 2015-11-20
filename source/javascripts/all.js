@@ -1,4 +1,5 @@
 //= require_tree .
+<<<<<<< HEAD
 $(document).ready(function() {
   $('.grid').masonry({
     itemSelector: '.grid-item',
@@ -13,3 +14,5 @@ $(document).ready(function() {
       effect: 'fade'
     })
 });
+=======
+>>>>>>> d18bc4fdee9cc8e2ee58ec20e0f1bfd9fd6f3ab4

@@ -1,4 +1,5 @@
 <footer>
+<<<<<<< HEAD
   <div class="warp">
     <div class="site_link">
       <h3>Sebastian De Gobbis</h3>
@@ -41,5 +42,43 @@
     <p class="copy">
       &copy; 2015 - Sebastian De Gobbis - <%= link_to("Privacy", "#") %> - <%= link_to("Cookie", "#") %>
     </p>
+=======
+  <div class="site_link">
+    <ul>
+      <li> <%= link_to("Home", "/") %> </li>
+      <li> <%= link_to("Opere", "/opere.html") %> </li>
+      <li> <%= link_to("Biografia", "/biografia.html") %> </li>
+      <li> <%= link_to("Contatti", "/contatti.html") %> </li>
+      <li>
+        <a href="https://www.facebook.com/sebastian.degobbis.artist">Facebook</a>
+        <a href="https://plus.google.com/112598431490420206575">G+</a>
+      </li>
+    </ul>
+  </div>
+  <div class="form-contacts">
+    <% form_tag '/contacts.rb', :method => 'post' do %>
+      <% field_set_tag do %>
+        <p>
+          <%= label_tag :name %>
+          <%= text_field_tag :name %>
+        </p>
+        <p>
+          <%= label_tag :mail %>
+          <%= text_field_tag :mail %>
+        </p>
+        <p>
+          <%= label_tag :telephone %>
+          <%= text_field_tag :telephone %>
+        </p>
+        <p>
+          <%= label_tag :message %>
+          <%= text_area_tag :message %>
+        </p>
+      <% end %>
+      <% field_set_tag(:class => 'buttons') do %>
+        <%= submit_tag "Invia" %>
+      <% end %>
+    <% end %>
+>>>>>>> d18bc4fdee9cc8e2ee58ec20e0f1bfd9fd6f3ab4
   </div>
 </footer>
