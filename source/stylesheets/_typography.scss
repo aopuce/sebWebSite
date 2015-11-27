@@ -1,0 +1,71 @@
+$font_body: 'Cuprum', sans-serif;
+$font_heading: 'Pacifico', cursive;
+
+$base-font-size: 18px;
+$base-line-height: 29px;
+$round-to-nearest-half-line: true;
+$rhythm-unit: em;
+$grid-background-baseline-height: $base-line-height;
+$h1-fs: 45px;
+$h2-fs: 30px;
+$h3-fs: 24px;
+$h4-fs: 20px;
+
+@include establish-baseline;
+
+body {
+  font-family: $font_body;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font_heading;
+  padding: rhythm(1) 0;
+}
+
+h1 {
+  @include adjust-font-size-to($h1-fs);
+  padding: rhythm(0.3) 0;
+  margin: rhythm(0.3) 0;
+  margin-right: gutter();
+  position: relative;
+  .show-for-landscape {
+    position: absolute;
+    @include adjust-font-size-to($h1-fs / 4);
+    top: -10%;
+    @include susy-breakpoint($minshow) {
+      position: inherit;
+      font-size: inherit;
+    }
+  }
+}
+
+h2 {
+  @include adjust-font-size-to($h2-fs);
+  font-weight: 900;
+}
+
+h3 {
+  @include adjust-font-size-to($h3-fs);
+}
+
+h4 {
+  @include adjust-font-size-to($h4-fs);
+}
+
+a {
+  @include unstyled-link;
+}
+
+ul {
+  @include no-bullet;
+  padding: 0;
+}
+p {
+  padding: rhythm(1) 0;
+  strong {
+    font-weight: 900;
+    font-style: italic;
+  }
+}
+figcaption {
+  color: #fff;
+}

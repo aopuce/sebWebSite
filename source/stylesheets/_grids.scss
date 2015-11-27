@@ -2,10 +2,12 @@ $susy: (
   columns: 8,
   container: 1140px,
   global-box-sizing: border-box,
-  debug: (image: show)
+  debug: (image: hide)
 );
+$minshow: 480px;
 $tablet: 600px;
 $desktop: 980px;
+
 @include border-box-sizing;
 body, html {
   width: 100%;
@@ -29,6 +31,9 @@ img {
   @include clearfix;
 }
 .grid-sizer, .grid-item, {
+  @include breakpoint($minshow $tablet, orientation landscape) {
+    width: 50%;
+  }
   @include susy-breakpoint($tablet, 8) {
     width: 50%;
   }
@@ -36,23 +41,43 @@ img {
     width: 25%;
   }
 }
+
+.grid-item {
+  float: left;
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+header {
+  padding-left: 2%;
+}
+
 figure {
   position: relative;
   figcaption {
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
+    width: 100%;
+    padding: 2%;
   }
 }
 .bio_img {
   width: 100%;
-  height: 200px;
+  height: 14em;
   position: relative;
   overflow: hidden;
-  img {
-    width: 100%;
-    position: absolute;
-    bottom: -50%;
-    top: -50%;
+  background: no-repeat center center;
+  background-size: cover;
+  &.bio--1 {
+    background-image: url(/images/opere/collana_di_gelsomini-63x79_5.jpg);
+  }
+  &.bio--2 {
+    background-image: url(/images/opere/clessidra-80x100.jpg);
+  }
+  &.bio--3 {
+    background-image: url(/images/opere/autoritratto_in_qr_code-42x42-@2x.jpg);
   }
 }
 
