@@ -1,0 +1,212 @@
+button,
+button:focus,
+button:active {
+  border: none;
+  outline: 0;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  outline: none;
+}
+//style tasto menu
+
+.btn-menu {
+  @include clearfix;
+  background: $font-color;
+  padding: 0;
+  line-height: inherit;
+  width: auto;
+  padding: 1em;
+  @include transition(all, 0.5s);
+  @include breakpoint($tablet) {
+      margin-right: 1em;
+  }
+  .icon-menu {
+    float: left;
+    width: 1em;
+    height: 2px;
+    background: #fff;
+    margin-right: 0.5em;
+    margin-top: 5px;
+    @include transition(all, 0.5s);
+    &::before, &::after {
+      @include transition(all, 0.5s);
+      content: '';
+      display: block;
+      width: 1em;
+      height: 2px;
+      background: #fff;
+    }
+    &::before {
+      margin-top: 6px;
+    }
+    &::after {
+      margin-top: 4px;
+    }
+  }
+  &.btn-open {
+    color: $btn-color;
+    .icon-menu, .icon-menu::before, .icon-menu::after  {
+      background: $btn-color;
+    }
+    .icon-menu {
+      background: $font-color;
+      &::after {
+        @include transform(rotate(-45deg));
+        margin-top: -2px;
+      }
+      &::before {
+        @include transform(rotate(45deg));
+      }
+    }
+
+  }
+}
+
+.btn-menu:hover {
+  color: $btn-color;
+  .icon-menu, .icon-menu::before, .icon-menu::after  {
+    background: $btn-color;
+  }
+}
+
+
+
+.menu {
+  @include clearfix;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(all, 0.5s);
+  &.menu-open {
+    opacity: 1;
+    visibility: visible;
+  }
+  a {
+    display: block;
+    width: 100%;
+  }
+}
+
+// .btn.menu
+//   z-index: 3
+//   margin-top: -70px
+//   position: absolute
+//   height: 99px
+//   width: 99px
+//   padding: 0
+//   top: 50%
+//   right: 0.3em
+//   color: $font-color
+//   +transition($transition)
+//   .text
+//     position: absolute
+//     display: block
+//     width: 100%
+//     line-height: 99px
+//     top: 0
+//     +transition($transition)
+//     &.open
+//       top: 150%
+//   .backbuttn
+//     position: absolute
+//     top: 50%
+//     left: 50%
+//     margin: -35px 0 0 -35px
+//     display: block
+//     height: 70px
+//     width: 70px
+//     background: $linkBack
+//     +transform(rotate(45deg))
+//     +transition($transition)
+//     border: 2px solid $linkBack
+//     &.open
+//       border-color: $font-color
+//
+// .x1-45, .x2-45
+//   position: absolute
+//   display: block
+//   width: 40px
+//   height: 2px
+//   background: $font-color
+//   top: 150% //when menu is opet top 50%
+//   left: 30px
+//   margin-top: -1px
+//   +transition($transition)
+//   &.open
+//     top: 50%
+// .x1-45
+//   +transform(rotate(45deg))
+// .x2-45
+//   +transform(rotate(-45deg))
+//
+//
+// //style menu
+// nav
+//   height: 100%
+//   width: 100%
+//   position: absolute
+//   top: 0
+//   overflow: hidden
+//   z-index: -1
+//   +transition($transition)
+//   +transition-delay(.5s)
+//   &.open
+//     z-index: 2
+//
+// .inner_menu
+//   display: table
+//   width: 100%
+//   height: 100%
+//   #inner_menu_link
+//     display: table-cell
+//     width: 100%
+//     vertical-align: middle
+//
+//
+// .back_menu, .inner_menu
+//   position: absolute
+//   height: 100%
+//   text-align: center
+//   top: 0
+//   left: 0
+//   right: 0
+//   bottom: 0
+//   +transition($transition)
+// .back_menu
+//   background: $linkBack
+//   +transform(translateX(100%))
+//   +transition-delay(0.5s)
+// .back_menu.open
+//   +transform(translateX(0))
+//
+//
+// .inner_menu
+//   li
+//     width: 35%
+//     margin: 0 auto
+//     margin-bottom: 1em
+//     +transition($transition)
+//     +transform(translateY(9999px))
+//     a
+//       display: block
+//       width: 100%
+//       .line
+//         display: block
+//         width: inherit
+//         height: 4px
+//         background-color: $font-color
+//         +opacity(0.5)
+// .inner_menu.open li
+//   +transform(translateY(0))
+//
+// @for $i from 0 to 6
+//   .inner_menu.open li:nth-child(5n + #{$i})
+//     +transition-delay(((0.3 + ($i / 100) + ($i / 10)) / 2) + s)
+//
+// a:hover .line
+//   +opacity(1)
+// a.active
+//   +opacity(1)

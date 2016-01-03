@@ -9,10 +9,10 @@ $(document).ready(function() {
     $grid.masonry();
   });
   var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      loop: true,
-      autoplay: 3500,
-      autoplayDisableOnInteraction: false,
-      effect: 'fade'
-    })
+    // Optional parameters
+    loop: true,
+    autoplay: 3500,
+    autoplayDisableOnInteraction: false,
+    effect: 'fade'
+  });
 });

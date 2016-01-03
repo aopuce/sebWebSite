@@ -1,15 +1,5 @@
-$susy: (
-  columns: 8,
-  container: 1140px,
-  global-box-sizing: border-box,
-  debug: (image: hide)
-);
-$minshow: 480px;
-$tablet: 600px;
-$desktop: 980px;
-
 @include border-box-sizing;
-body, html {
+body, html, .warp {
   width: 100%;
   height: 100%;
 }
@@ -27,18 +17,53 @@ img {
     @include show-grid(16);
   }
 }
+
+.btn {
+  display: inline-block;
+  width: 160px;
+  padding: 5px 30px;
+  @include border-radius($bor-rad);
+}
+
+.cover {
+  display: table;
+  width: 100%;
+  height: 100%;
+  .bq {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    span {
+      display: block;
+      @include breakpoint(($minshow) (orientation landscape)) {
+        display:inline;
+      }
+      @include susy-breakpoint($desktop) {
+        display: block;
+      }
+
+    }
+  }
+  .btn-opere {
+    display: block;
+    margin: 1.5em auto;
+  }
+}
+
 .grid {
   @include clearfix;
 }
 .grid-sizer, .grid-item, {
-  @include breakpoint($minshow $tablet, orientation landscape) {
-    width: 50%;
+  margin: 2%;
+  @include breakpoint(($minshow $tablet) (orientation landscape)) {
+    width: 46%;
   }
   @include susy-breakpoint($tablet, 8) {
-    width: 50%;
+    width: 46%;
   }
   @include susy-breakpoint($desktop, 16) {
     width: 25%;
+    margin: 0;
   }
 }
 
@@ -51,16 +76,41 @@ img {
 }
 
 header {
-  padding-left: 2%;
+  position: fixed;
+  width: 100%;
+  @include breakpoint($tablet) {
+      margin-top: 2%;
+  }
+  h1 {
+    float: left;
+  }
+  .btn {
+    float: right;
+  }
 }
 
 figure {
   position: relative;
+  padding: 2% 2% 10%;
+  @include border-radius($bor-rad);
+  @include susy-breakpoint($desktop, 16) {
+    padding: 0;
+    @include border-radius(0);
+  }
   figcaption {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    padding: 2%;
+    @include susy-breakpoint($desktop, 16) {
+      padding: 0;
+      position: absolute;
+      bottom: 0;
+      opacity: 0;
+      visibility: hidden;
+      @include transition(all, 0.5s);
+    }
+  }
+  &:hover figcaption {
+    opacity: 1;
+    visibility: visible;
   }
 }
 .bio_img {
@@ -88,14 +138,47 @@ figure {
   label, textarea, input {
     width: 100%;
   }
+  textarea {
+    height: 150px;
+  }
+  input {
+    line-height: 2em;
+  }
+  .f_name {
+    @include susy-breakpoint($tablet, 8) {
+      @include span(4);
+    }
+  }
+  .f_mail {
+    @include susy-breakpoint($tablet, 8) {
+      @include span(4 last);
+    }
+  }
 }
 .site_link {
+  li {
+    display: inline-block;
+    text-align: center;
+    @include span(2 of 8);
+    &:nth-child(4n) {
+      @include span(2 of 8 last);
+    }
+    @include susy-breakpoint($desktop, 16) {
+      text-align: left;
+      display: block;
+      float: none;
+      &:nth-child(4n) {
+        float: none;
+      }
+    }
+  }
   @include susy-breakpoint($tablet, 8) {
     @include span(4);
   }
   @include susy-breakpoint($desktop, 16) {
     @include pre(2);
     @include span(6);
+    float: left;
   }
 }
 .form_contacts {
@@ -104,12 +187,15 @@ figure {
   }
   @include susy-breakpoint($desktop, 16) {
     @include span(6);
+    @include post(2);
+    float: right;
   }
 }
 .copy {
   @include clearfix ;
   width: 100%;
 }
+
 
 .swiper-container {
   width: 100%;

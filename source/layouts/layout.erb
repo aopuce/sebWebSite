@@ -33,27 +33,9 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
       </div>
-    <header>
-      <h1><a href="#"><span class="show-for-landscape">Sebastian </span>De Gobbis</a></h1>
-      <button class="btn menu">
-          <span class="backbuttn"></span>
-          <span class="text">Menu</span>
-          <span class="x1-45"></span>
-          <span class="x2-45"></span>
-        </button>
-      <nav>
-        <ul>
-          <li><%= new_link_to("Home", "/") %></li>
-          <li><%= new_link_to("Opere", "/opere.html") %></li>
-          <li><%= new_link_to("Biografia", "/bio.html") %></li>
-          <li><%= new_link_to("Contatti", "/contatti.html") %></li>
-        </ul>
-        <%= link_to("Facebook", "https://www.facebook.com/sebastian.degobbis.artist") %>
-        <%= link_to("G+", "https://plus.google.com/112598431490420206575") %>
-      </nav>
-    </header>
+    
     <%= yield %>
-    <%= partial "footer" %>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

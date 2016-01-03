@@ -1,16 +1,3 @@
-$font_body: 'Cuprum', sans-serif;
-$font_heading: 'Pacifico', cursive;
-
-$base-font-size: 18px;
-$base-line-height: 29px;
-$round-to-nearest-half-line: true;
-$rhythm-unit: em;
-$grid-background-baseline-height: $base-line-height;
-$h1-fs: 45px;
-$h2-fs: 30px;
-$h3-fs: 24px;
-$h4-fs: 20px;
-
 @include establish-baseline;
 
 body {
@@ -20,24 +7,51 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font_heading;
   padding: rhythm(1) 0;
 }
-
 h1 {
   @include adjust-font-size-to($h1-fs);
-  padding: rhythm(0.3) 0;
-  margin: rhythm(0.3) 0;
-  margin-right: gutter();
-  position: relative;
+  padding: rhythm(0.2) 0;
+  @include breakpoint($tablet) {
+    @include adjust-font-size-to($h1-fs * 2);
+  }
+}
+header h1 {
   .show-for-landscape {
     position: absolute;
     @include adjust-font-size-to($h1-fs / 4);
-    top: -10%;
+    top: -4%;
     @include susy-breakpoint($minshow) {
       position: inherit;
       font-size: inherit;
     }
   }
+  @include breakpoint($tablet) {
+    padding: 0 0;
+  }
 }
 
+
+.cover {
+  display: table;
+  .tb-cell {
+    display: table-cell;
+    height: 5em;
+    vertical-align: middle;
+    padding: 0;
+    h1 {
+      color: $background;
+      background: $font-color;
+      text-align: center;
+      width: 9em;
+      margin: 1.5em auto;
+      border-bottom: 0.2em solid $btn-color;
+    }
+  }
+}
+header {
+  h1 {
+    @include adjust-font-size-to($h1-fs);
+  }
+}
 h2 {
   @include adjust-font-size-to($h2-fs);
   font-weight: 900;
@@ -67,5 +81,37 @@ p {
   }
 }
 figcaption {
-  color: #fff;
+  h3, p {
+    padding: rhythm(0.3);
+  }
+}
+
+.site_link {
+  li {
+    @include adjust-font-size-to(18px);
+    padding: rhythm(0.25) 0;
+  }
+}
+
+.btn {
+  line-height: 50px;
+  text-align: center;
+  font-family: $font-body;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bq blockquote {
+  @include adjust-font-size-to(35px);
+  color: $background;
+  text-align: right;
+  @include text-shadow(2px 2px 5px #444 );
+  span {
+    font-weight: bold;
+    font-style: italic;
+  }
+  @include breakpoint($tablet) {
+    @include adjust-font-size-to(50px);
+    text-align: center;
+  }
 }

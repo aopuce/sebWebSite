@@ -2,16 +2,24 @@
 title: Sebastian De Gobbis | Pittore
 ---
 
-<div class="warp">
+<!-- <div class="warp">
   <div id="cover-back"></div>
   <div class="cover">
-    <%= link_to("Opere", "/opere.html", class: "btn btn-opere") %>
     <div class="bq">
       <blockquote cite="http://www.artofdavidwalker.com">
-        A<br><strong>Blank Canvas</strong><br>is a <br><strong>White Flag</strong>
+        <div>A <span>Blank Canvas </span></div>
+        <div>is a <span>White Flag</span></div>
       </blockquote>
       <cite><em>David Walker</em></cite>
+      <%= link_to("Opere", "/opere.html", class: "btn btn-opere") %>
     </div>
+  </div>
+</div> -->
+<%= partial "header" %>
+<div class="cover">
+  <div class="tb-cell">
+      <h1>Sebastian De Gobbis</h1>
+      <%= link_to("Opere", "/opere.html", class: "btn btn-opere") %>
   </div>
 </div>
 <div class="swiper-container">

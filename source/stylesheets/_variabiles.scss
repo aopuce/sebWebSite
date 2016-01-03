@@ -1,0 +1,37 @@
+//Colors
+$background: #ffffff; //rgba(255, 255, 255, 100)
+$btn-color: #3fffa2; //rgba(63, 255, 162, 100)
+$footer-color: #a6a2a2; //rgba(104, 121, 127, 100)
+$header-color: #cfd2cd; //rgba(207, 210, 205, 100)
+$font-color: scale-lightness(#68797f, -30%); // #68797f; //rgba(166, 162, 162, 100)
+
+//Fonts
+$font_body: 'Cuprum', sans-serif;
+$font_heading: 'Pacifico', cursive;
+//Fonts Measures
+$base-font-size: 18px;
+$base-line-height: 29px;
+$round-to-nearest-half-line: true;
+$rhythm-unit: em;
+$grid-background-baseline-height: $base-line-height;
+$h1-fs: 30px;
+$h2-fs: 28px;
+$h3-fs: 24px;
+$h4-fs: 20px;
+
+//Animation
+$transition: all 0.5s;
+
+//Grids
+$susy: (
+  columns: 8,
+  container: 1140px,
+  global-box-sizing: border-box,
+  debug: (image: hide)
+);
+$minshow: 480px;
+$tablet: 600px;
+$desktop: 980px;
+
+//radius
+$bor-rad: 5px;
