@@ -1,0 +1,52 @@
+---
+title: Sebastian De Gobbis | Contatti
+---
+<%= partial "header" %>
+<section>
+
+<div class="warp cont">
+  <h2>Contatti</h2>
+  <hr>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <div class="contact_cont">
+    <h3>Email</h3>
+    <p>
+      <a href="mailto:info@sebastiandegobbis.com">info@sebastiandegobbis.it</a>
+    </p>
+    <h3>Telefono</h3>
+    <p>
+      +39 3481234567
+    </p>
+    <h3>indirizzo</h3>
+    <p>
+      <span>via taldeitali, 42</span> <br>
+      <span>37037</span><br>
+      <span>Verona</span>
+    </p>
+  </div>
+  <div class="form_contacts">
+    <h3>Scrivi qui</h3>
+    <% form_tag '/contacts.rb', :method => 'post' do %>
+      <% field_set_tag do %>
+        <div class="f_name f_warp">
+          <%= text_field_tag :name, :class => 'form-input' %>
+          <%= label_tag :name, :class => 'form-label' %>
+        </div>
+        <div class="f_mail f_warp">
+          <%= text_field_tag :mail, :class => 'form-input' %>
+          <%= label_tag :mail, :class => 'form-label' %>
+        </div>
+        <div class="f_message f_warp">
+          <%= text_area_tag :message, :class => 'form-input' %>
+          <%= label_tag :message, :class => 'form-label', :class => 'form-label' %>
+        </div>
+      <% end %>
+        <% field_set_tag(:class => 'fieldsetbtn') do %>
+          <%= submit_tag "Invia", :class => 'btn' %>
+        <% end %>
+    <% end %>
+  </div>
+</div>
+</section>

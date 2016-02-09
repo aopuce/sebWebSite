@@ -19,6 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.0/js/swiper.min.js"></script>
     <%= javascript_include_tag :all %>
+    <%= javascript_include_tag :loadpage %>
 
   </head>
 
@@ -33,7 +34,7 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
       </div>
-    
+
     <%= yield %>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

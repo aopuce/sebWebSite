@@ -1,0 +1,33 @@
+---
+title: Sebastian De Gobbis | Opere
+---
+<div id="opera-content">
+  <%= partial "header" %>
+  <article class="warp">
+
+    <section >
+      <div class="show-opera">
+        <div class="text-wrapper">
+          <div class="title">
+            <h2>Opere</h2>
+          </div>
+          <hr>
+          <p class="measures"></p>
+        </div>
+        <div class="content"></div>
+      </div>
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        <% data.opere.each do |f| %>
+          <% content_tag :div, :class => "grid-item" do %>
+            <% link_to f.opera.to_s + '.html' do %>
+              <%= add_image(f[:opera], f[:dimension], "jpg") %>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+
+    </section>
+  </article>
+</div>
+<%= partial "footer" %>

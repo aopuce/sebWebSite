@@ -1,0 +1,199 @@
+//keyframes for preloader
+@include keyframes(spin) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+  }
+@include keyframes(contspin) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(-360deg));
+  }
+}
+* {
+  @include transition($transition);
+}
+body {
+  color: $font-color;
+}
+header {
+  background-color: $font-color;
+  color: $background;
+}
+footer{
+  background-color: $footer-color;
+}
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 1500;
+    border-radius: 50%;
+  }
+    #loader-1, #loader-2, #loader-3 {
+      position: absolute;
+      border-radius: 50%;
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 5px solid $font-color;
+        border-radius: 50%;
+      }
+    }
+    #loader-1 {
+      @include animation(contspin 1.8s linear infinite);
+      width: 100px;
+      height: 100px;
+      margin: -50px 0 0 -50px;
+      &::before {
+        border-top-color: $btn-color ;
+      }
+    }
+    #loader-2 {
+      @include animation(spin 2s linear infinite);
+      width: 120px;
+      height: 120px;
+      margin: -60px 0 0 -60px;
+      &::before {
+        border-top-color: $header-color;
+      }
+    }
+    #loader-3 {
+      width: 80px;
+      height: 80px;
+      margin: -40px 0 0 -40px;
+      @include animation(spin 1.5s linear infinite);
+      &::before {
+        border-bottom-color: $header-color;
+      }
+    }
+  .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background-color: $font-color;
+    &.section-left {
+      left: 0;
+    }
+    &.section-right {
+      right: 0;
+    }
+  }
+}
+.loaded #loader-wrapper .loader-section {
+  &.section-left, &.section-right {
+    @include transition(all 0.3s 0.3s ease-out);
+  }
+  &.section-left {
+    @include transform(translateX(-100%));
+  }
+  &.section-right {
+    @include transform(translateX(100%));
+  }
+}
+.loaded {
+  #loader {
+    opacity: 0;
+    @include transition(all 0.3s ease-out);
+  }
+  #loader-wrapper {
+    visibility: hidden;
+    @include transform(translateY(-100%));
+    @include transition(all 0.3s 0.6s ease-out);
+  }
+}
+.no-js #loader-wrapper {
+  display: none;
+}
+.f_warp {
+  position: relative;
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+.form-label {
+  position: absolute;
+  pointer-events: none;
+  top: 1em;
+  line-height: 2em
+}
+
+.f_message {
+  float: left;
+  width: 100%;
+}
+
+.form-input + .form-label {
+  padding: 0 1em;
+  color: $font-color;
+  @include transform-origin(center, left);
+  @include transition(all, 0.3s);
+  &.writing {
+    color: #333333;
+    @include transform(scale(0.8) translateY(-40px));
+  }
+}
+.form-input:focus + .form-label {
+  color: #333333;
+  @include transform(scale(0.8) translateY(-40px));
+}
+.form-input, textarea {
+  border: 1px solid scale-saturation($btn-color, -80%);
+}
+.form-input:focus, textarea:focus {
+  border-color: $btn-color;
+  outline: none;
+}
+fieldset {
+  &.btn {
+    padding: 0;
+  }
+  input[type="submit"] {
+    border: none;
+    background: $btn-color;
+    color: $background;
+    font-weight: bold;
+    outline: none;
+    line-height: 50px;
+  }
+}
+.back-swiper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  z-index: 2;
+}
+.btn {
+  background: $btn-color;
+  color: $background;
+}
+figure {
+  border: 1px solid $font-color;
+  color: $font-color;
+  background: scale-lightness($background, -10%);
+  @include susy-breakpoint($desktop, 16) {
+    border: none;
+  }
+  figcaption {
+    background: scale-lightness($background, -10%);
+  }
+}

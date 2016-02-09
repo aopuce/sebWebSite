@@ -17,8 +17,8 @@
             <%= label_tag :message, :class => 'form-label', :class => 'form-label' %>
           </div>
         <% end %>
-          <% field_set_tag(:class => 'btn') do %>
-            <%= submit_tag "Invia" %>
+          <% field_set_tag(:class => 'fieldsetbtn') do %>
+            <%= submit_tag "Invia", :class => 'btn' %>
           <% end %>
       <% end %>
     </div>
@@ -27,7 +27,7 @@
       <ul>
         <li> <%= link_to("Home", "/") %> </li>
         <li> <%= link_to("Opere", "/opere.html") %> </li>
-        <li> <%= link_to("Biografia", "/biografia.html") %> </li>
+        <li> <%= link_to("Biografia", "/bio.html") %> </li>
         <li> <%= link_to("Contatti", "/contatti.html") %> </li>
       </ul>
       <h4>Social</h4>

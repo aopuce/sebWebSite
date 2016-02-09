@@ -32,28 +32,63 @@ header h1 {
 
 .cover {
   display: table;
+  padding-top: 4em;
   .tb-cell {
+    @include clearfix;
     display: table-cell;
-    height: 5em;
     vertical-align: middle;
-    padding: 0;
-    h1 {
+    blockquote h2 {
+      @include clearfix;
+      font-family: $font_body;
+      text-align: right;
+      padding: 0 ;
+      @include breakpoint ($tablet) {
+        @include adjust-font-size-to($h2-fs * 2);
+        text-align: center;
+        font-style: italic;
+      }
+      span {
+        color: $background;
+        background: $font-color ;
+        max-width: 9em;
+        padding: 0 0.25em;
+        border-bottom: 0.125em solid $btn-color;
+      }
+    }
+    cite {
+      font-family: $font_heading;
       color: $background;
-      background: $font-color;
-      text-align: center;
-      width: 9em;
-      margin: 1.5em auto;
-      border-bottom: 0.2em solid $btn-color;
+      float: right;
+      @include adjust-font-size-to(16px);
+      @include breakpoint ($tablet) {
+        margin-right: 32%;
+      }
+    }
+  }
+}
+.d-quot {
+  margin-bottom: 0.25em;
+  @include breakpoint(($minshow $tablet) (orientation landscape)) {
+    @include span(4 of 8);
+  }
+  &:nth-child(even) {
+    @include breakpoint(($minshow $tablet) (orientation landscape)) {
+      @include span(4 of 8 last);
+      text-align: left;
     }
   }
 }
 header {
   h1 {
     @include adjust-font-size-to($h1-fs);
+    @include breakpoint(($minshow $tablet) (orientation landscape)) {
+      padding: 0;
+    }
   }
 }
 h2 {
   @include adjust-font-size-to($h2-fs);
+  padding-bottom: 1em;
   font-weight: 900;
 }
 
@@ -90,6 +125,10 @@ figcaption {
   li {
     @include adjust-font-size-to(18px);
     padding: rhythm(0.25) 0;
+    a:hover {
+      font-weight: bold;
+      color: $btn-color;
+    }
   }
 }
 
@@ -99,19 +138,4 @@ figcaption {
   font-family: $font-body;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.bq blockquote {
-  @include adjust-font-size-to(35px);
-  color: $background;
-  text-align: right;
-  @include text-shadow(2px 2px 5px #444 );
-  span {
-    font-weight: bold;
-    font-style: italic;
-  }
-  @include breakpoint($tablet) {
-    @include adjust-font-size-to(50px);
-    text-align: center;
-  }
 }

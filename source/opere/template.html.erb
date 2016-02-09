@@ -1,0 +1,14 @@
+<% p = locals[:opere] %>
+<article>
+  <section class="warp">
+      <div class="l-content">
+          <h2  class="title"><%= p[:title] %></h2>
+          <% content_tag :p, :class => "measures" do %>
+            <%= p[:cmdimension] %>
+          <% end %>
+      </div>
+      <div class="content">
+        <%= add_image(p[:opera], p[:dimension], "jpg") %>
+      </div>
+  </section>
+</article>

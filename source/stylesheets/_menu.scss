@@ -70,23 +70,79 @@ input::-moz-focus-inner {
   .icon-menu, .icon-menu::before, .icon-menu::after  {
     background: $btn-color;
   }
+  &.btn-open {
+    .icon-menu {
+      background: $font-color;
+    }
+  }
 }
-
 
 
 .menu {
   @include clearfix;
   width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  @include transition(all, 0.5s);
+  max-height: 0;
+  position: absolute;
+  top: 100%;
+  background: $font-color;
+  border-top: 3px solid $btn-color;
+  @include adjust-font-size-to(1.2em);
+  text-align: center;
+  .social-menu {
+    @include clearfix;
+    clear: both;
+    padding-top: 24px;
+  }
+  @include transition($transition);
   &.menu-open {
-    opacity: 1;
-    visibility: visible;
+    padding: 24px 0;
+    max-height: 18em;
+    overflow: hidden;
+  }
+  li {
+    padding: rhythm(0.5) 20%;
+    @include breakpoint(($minshow $tablet) (orientation landscape)) {
+      @include span(3 of 8);
+      margin: 0 0 0 span(1 of 8);
+      padding: 4% 0;
+    }
+    &:nth-child(even) {
+      @include breakpoint(($minshow $tablet) (orientation landscape)) {
+        @include span(3 of 8 last);
+        margin: 0 span(1 of 8) 0 0;
+        padding: 4% 0;
+      }
+    }
+    @include breakpoint($desktop, 16) {
+      @include span(3 of 16);
+      padding: 0 0;
+      &:first-child {
+        @include push(2 of 16);
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
   a {
-    display: block;
-    width: 100%;
+    display: block;;
+    @include transition($transition);
+    .line {
+      display: block;
+      width: 100%;
+      height: 0.05em;
+      background-color: $background;
+      margin-top: 0.3em;
+      @include transition($transition);
+      @include opacity(0.2);
+    }
+    &:hover {
+      color: $btn-color;
+      .line {
+        background-color: $btn-color;
+        @include opacity(0.8);
+      }
+    }
   }
 }
 

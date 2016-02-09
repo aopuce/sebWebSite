@@ -4,7 +4,7 @@ $btn-color: #3fffa2; //rgba(63, 255, 162, 100)
 $footer-color: #a6a2a2; //rgba(104, 121, 127, 100)
 $header-color: #cfd2cd; //rgba(207, 210, 205, 100)
 $font-color: scale-lightness(#68797f, -30%); // #68797f; //rgba(166, 162, 162, 100)
-
+$warp-back: #eee;
 //Fonts
 $font_body: 'Cuprum', sans-serif;
 $font_heading: 'Pacifico', cursive;
@@ -25,12 +25,12 @@ $transition: all 0.5s;
 //Grids
 $susy: (
   columns: 8,
-  container: 1140px,
+  container: 100%,
   global-box-sizing: border-box,
   debug: (image: hide)
 );
 $minshow: 480px;
-$tablet: 600px;
+$tablet: 748px;
 $desktop: 980px;
 
 //radius
