@@ -225,13 +225,13 @@ header {
   background-size: cover; }
   /* line 167, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
   .bio_img.bio--1 {
-    background-image: url(images/opere/collana_di_gelsomini-63x79_5.jpg); }
+    background-image: url(http://aopuce.github.io/sebWebSite/images/opere/collana_di_gelsomini-63x79_5.jpg); }
   /* line 170, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
   .bio_img.bio--2 {
-    background-image: url(images/opere/clessidra-80x100.jpg); }
+    background-image: url(http://aopuce.github.io/sebWebSite/images/opere/clessidra-80x100.jpg); }
   /* line 173, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
   .bio_img.bio--3 {
-    background-image: url(images/opere/autoritratto_in_qr_code-42x42.jpg); }
+    background-image: url(http://aopuce.github.io/sebWebSite/images/opere/autoritratto_in_qr_code-42x42.jpg); }
 
 /* line 179, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
 .form_contacts label {
