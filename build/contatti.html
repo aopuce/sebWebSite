@@ -6,7 +6,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Sebastian De Gobbis | Pittore</title>
+    <title>Sebastian De Gobbis | Contatti</title>
 
     <!-- <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900,400italic,900italic|Roboto:400,100,900,100italic,400italic,900italic' rel='stylesheet' type='text/css'> -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100,300|Roboto:400,100,100italic,400italic,900italic,700' rel='stylesheet' type='text/css'> -->
@@ -23,7 +23,7 @@
 
   </head>
 
-  <body class="index">
+  <body class="contatti">
     <div id="loader-wrapper">
         <div id="loader">
           <span id="loader-1"></span>
@@ -43,10 +43,10 @@
   </button>
   <nav class="menu">
     <ul>
-      <li><a href="/" class="active">Home<span class="line"></span></a></li>
+      <li><a href="/">Home<span class="line"></span></a></li>
       <li><a href="/opere/">Opere<span class="line"></span></a></li>
       <li><a href="/bio.html">Biografia<span class="line"></span></a></li>
-      <li><a href="/contatti.html">Contatti<span class="line"></span></a></li>
+      <li><a href="/contatti.html" class="active">Contatti<span class="line"></span></a></li>
     </ul>
     <div class="social-menu">
       <a href="https://www.facebook.com/sebastian.degobbis.artist">Facebook</a>
@@ -55,53 +55,49 @@
   </nav>
 </header>
 
+<section>
 
-<div class="warp">
-  <div id="cover-back"></div>
-  <div class="cover">
-    <div class="tb-cell">
-      <blockquote cite="http://www.artofdavidwalker.com">
-        <h2>
-          <div class="d-quot">
-            <span>A</span>
-          </div>
-          <div class="d-quot">
-            <span>Blank Canvas</span>
-          </div>
-          <div class="d-quot">
-            <span>is a</span>
-          </div>
-          <div class="d-quot">
-            <span>White Flag</span>
-          </div>
-        </h2>
-      </blockquote>
-      <cite><em>David Walker</em></cite>
-      <a class="btn btn-opere" href="/opere/">Opere</a>
-    </div>
+<div class="warp cont">
+  <h2>Contatti</h2>
+  <hr>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <div class="contact_cont">
+    <h3>Email</h3>
+    <p>
+      <a href="mailto:info@sebastiandegobbis.com">info@sebastiandegobbis.it</a>
+    </p>
+    <h3>Telefono</h3>
+    <p>
+      +39 3481234567
+    </p>
+    <h3>indirizzo</h3>
+    <p>
+      <span>via taldeitali, 42</span> <br>
+      <span>37037</span><br>
+      <span>Verona</span>
+    </p>
   </div>
+  <div class="form_contacts">
+    <h3>Scrivi qui</h3>
+<form action="/contacts.rb" accept-charset="UTF-8" method="post"><fieldset>        <div class="f_name f_warp">
+          <input type="text" name="name" class="form-input" />
+          <label for="name" class="form-label">Name: </label>
+        </div>
+        <div class="f_mail f_warp">
+          <input type="text" name="mail" class="form-input" />
+          <label for="mail" class="form-label">Mail: </label>
+        </div>
+        <div class="f_message f_warp">
+          <textarea name="message" rows="" cols="" class="form-input">
+</textarea>
+          <label for="message" class="form-label">Message: </label>
+        </div>
+</fieldset><fieldset class="fieldsetbtn">          <input type="submit" value="Invia" class="btn" />
+</fieldset></form>  </div>
 </div>
-<!-- <div class="cover">
-  <div class="tb-cell">
-      <h1>Sebastian De Gobbis</h1>
-  </div>
-</div> -->
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide" style="background-image:url(/images/opere/amazzone-100x100.jpg)">
-    </div>
-    <div class="swiper-slide" style="background-image:url(/images/opere/codecity-95_5x98.jpg)">
-    </div>
-    <div class="swiper-slide" style="background-image:url(/images/opere/la_stanza_2-108x96.jpg)">
-    </div>
-    <div class="swiper-slide" style="background-image:url(/images/opere/clessidra-80x100.jpg)">
-    </div>
-    <div class="swiper-slide" style="background-image:url(/images/opere/partita_a_scacchi-69x63.jpg)">
-    </div>
-    <div class="swiper-slide" style="background-image:url(/images/opere/terapia-102x113.jpg)">
-    </div>
-  </div>
-</div>
+</section>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
