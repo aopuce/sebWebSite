@@ -1,0 +1,1008 @@
+/* line 5, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 21, /home/puce/.rvm/gems/ruby-2.2.1/gems/susy-2.2.6/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 2, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+body, html, .warp {
+  width: 100%;
+  height: 100%; }
+
+/* line 6, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+img {
+  max-width: 100%; }
+
+/* line 9, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.warp {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2%;
+  padding-right: 2%; }
+  /* line 12, /home/puce/.rvm/gems/ruby-2.2.1/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+  .warp:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  /* line 19, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .warp.bio, .warp.cont {
+    max-width: 960px; }
+
+/* line 25, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+section {
+  padding-top: 3.5em;
+  margin-bottom: 2em; }
+
+/* line 29, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.btn {
+  display: inline-block;
+  width: 160px;
+  padding: 5px 30px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+/* line 35, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.cover {
+  display: table;
+  width: 100%;
+  height: 100%; }
+  /* line 39, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .cover .bq {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 25%; }
+    /* line 44, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .cover .bq span {
+      display: block; }
+      @media (min-width: 480px) and (orientation: landscape) {
+        /* line 44, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+        .cover .bq span {
+          display: inline; } }
+      @media (min-width: 980px) {
+        /* line 44, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+        .cover .bq span {
+          display: block; } }
+  /* line 55, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .cover .btn-opere {
+    display: block;
+    margin: 2em auto 0; }
+
+/* line 61, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.grid {
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 64, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.grid-sizer, .grid-item {
+  width: 50%; }
+  @media (min-width: 480px) and (max-width: 748px) and (orientation: landscape) {
+    /* line 64, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .grid-sizer, .grid-item {
+      width: 25%; } }
+  @media (min-width: 748px) {
+    /* line 64, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .grid-sizer, .grid-item {
+      width: 33.333%; } }
+  @media (min-width: 980px) {
+    /* line 64, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .grid-sizer, .grid-item {
+      width: 20%;
+      margin: 0; } }
+
+/* line 79, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.grid-item {
+  float: left; }
+  /* line 81, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .grid-item img {
+    display: block;
+    max-width: 100%; }
+
+/* line 86, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.show-opera {
+  height: 180px;
+  -moz-transition: height, 1s;
+  -o-transition: height, 1s;
+  -webkit-transition: height, 1s;
+  transition: height, 1s; }
+
+/* line 90, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.show-opera.lets {
+  height: 700px;
+  overflow: hidden;
+  *zoom: 1; }
+  @media (min-width: 980px) {
+    /* line 90, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .show-opera.lets {
+      height: 700px; } }
+  /* line 96, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .show-opera.lets p {
+    padding: 0; }
+  @media (min-width: 980px) {
+    /* line 99, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .show-opera.lets .text-wrapper {
+      width: 24.05063%;
+      float: left;
+      margin-right: 1.26582%; } }
+  /* line 104, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .show-opera.lets .content {
+    height: 480px; }
+    @media (min-width: 980px) {
+      /* line 104, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+      .show-opera.lets .content {
+        height: 700px;
+        width: 74.68354%;
+        float: right;
+        margin-right: 0; } }
+    /* line 110, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .show-opera.lets .content img {
+      display: block;
+      margin: 0 auto;
+      padding: 2em;
+      max-height: 100%; }
+
+/* line 121, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+  @media (min-width: 748px) {
+    /* line 121, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    header {
+      margin-top: 1%; } }
+  /* line 128, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  header h1 {
+    float: left; }
+  /* line 131, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  header .btn {
+    float: right; }
+
+/* line 160, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.bio_img {
+  width: 100%;
+  height: 14em;
+  position: relative;
+  overflow: hidden;
+  background: no-repeat center center;
+  background-size: cover; }
+  /* line 167, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .bio_img.bio--1 {
+    background-image: url(/images/opere/collana_di_gelsomini-63x79_5.jpg); }
+  /* line 170, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .bio_img.bio--2 {
+    background-image: url(/images/opere/clessidra-80x100.jpg); }
+  /* line 173, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .bio_img.bio--3 {
+    background-image: url(/images/opere/autoritratto_in_qr_code-42x42.jpg); }
+
+/* line 179, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.form_contacts label {
+  display: block; }
+/* line 182, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.form_contacts label, .form_contacts textarea, .form_contacts input {
+  width: 100%; }
+/* line 185, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.form_contacts textarea {
+  height: 150px;
+  padding-left: 0.25em; }
+/* line 189, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.form_contacts input {
+  line-height: 2em;
+  padding-left: 0.25em; }
+@media (min-width: 748px) {
+  /* line 193, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .form_contacts .f_name {
+    width: 48.71795%;
+    float: left;
+    margin-right: 2.5641%; } }
+@media (min-width: 748px) {
+  /* line 198, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .form_contacts .f_mail {
+    width: 48.71795%;
+    float: right;
+    margin-right: 0; } }
+/* line 203, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.form_contacts .btn {
+  width: 100%; }
+
+/* line 208, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.site_link li {
+  display: inline-block;
+  text-align: center;
+  width: 23.07692%;
+  float: left;
+  margin-right: 2.5641%; }
+  /* line 212, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .site_link li:nth-child(4n) {
+    width: 23.07692%;
+    float: right;
+    margin-right: 0; }
+  @media (min-width: 980px) {
+    /* line 208, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .site_link li {
+      text-align: left;
+      display: block;
+      float: none; }
+      /* line 219, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+      .site_link li:nth-child(4n) {
+        float: none; } }
+@media (min-width: 748px) {
+  /* line 207, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .site_link {
+    width: 48.71795%;
+    float: left;
+    margin-right: 2.5641%; } }
+@media (min-width: 980px) {
+  /* line 207, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .site_link {
+    margin-left: 12.65823%;
+    width: 36.70886%;
+    float: left;
+    margin-right: 1.26582%;
+    float: left; } }
+
+@media (min-width: 748px) {
+  /* line 233, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .form_contacts {
+    width: 48.71795%;
+    float: right;
+    margin-right: 0; } }
+@media (min-width: 980px) {
+  /* line 233, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .form_contacts {
+    width: 36.70886%;
+    float: left;
+    margin-right: 1.26582%;
+    margin-right: 12.65823%;
+    float: right; } }
+
+/* line 244, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.cont {
+  background: #eee;
+  border: 1px solid #bebebe;
+  padding-bottom: 2.5641%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  @media (min-width: 980px) {
+    /* line 249, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .cont .form_contacts {
+      width: 68.35443%;
+      float: left;
+      margin-right: 1.26582%; } }
+  @media (min-width: 980px) {
+    /* line 254, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+    .cont .contact_cont {
+      width: 24.05063%;
+      float: right;
+      margin-right: 0; } }
+  /* line 258, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .cont .contact_cont h3 {
+    padding-bottom: 0.1em; }
+  /* line 261, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+  .cont .contact_cont p {
+    padding-top: 0.2em;
+    padding-bottom: 1em; }
+
+/* line 270, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.copy {
+  overflow: hidden;
+  *zoom: 1;
+  width: 100%; }
+
+/* line 276, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  z-index: -2 !important; }
+
+/* line 284, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_grids.scss */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+/* line 106, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 112.5%;
+  line-height: 1.61111em; }
+
+/* line 3, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+body {
+  font-family: "Cuprum", sans-serif; }
+
+/* line 6, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pacifico", cursive;
+  padding: 1.61111em 0; }
+
+/* line 10, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+h1 {
+  font-size: 1.66667em;
+  line-height: 1.45em;
+  padding: 0.32222em 0; }
+  @media (min-width: 748px) {
+    /* line 10, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+    h1 {
+      font-size: 3.33333em;
+      line-height: 1.20833em; } }
+
+/* line 18, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+header h1 .show-for-landscape {
+  position: absolute;
+  font-size: 0.41667em;
+  line-height: 1.93333em;
+  top: -4%; }
+  @media (min-width: 480px) {
+    /* line 18, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+    header h1 .show-for-landscape {
+      position: inherit;
+      font-size: inherit; } }
+@media (min-width: 748px) {
+  /* line 17, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+  header h1 {
+    padding: 0 0; } }
+
+/* line 33, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+.cover {
+  display: table;
+  padding-top: 4em; }
+  /* line 36, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+  .cover .tb-cell {
+    overflow: hidden;
+    *zoom: 1;
+    display: table-cell;
+    vertical-align: middle; }
+    /* line 40, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+    .cover .tb-cell blockquote h2 {
+      overflow: hidden;
+      *zoom: 1;
+      font-family: "Cuprum", sans-serif;
+      text-align: right;
+      padding: 0; }
+      @media (min-width: 748px) {
+        /* line 40, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+        .cover .tb-cell blockquote h2 {
+          font-size: 3.11111em;
+          line-height: 1.29464em;
+          text-align: center;
+          font-style: italic; } }
+      /* line 50, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+      .cover .tb-cell blockquote h2 span {
+        color: #ffffff;
+        background: #495559;
+        max-width: 9em;
+        padding: 0 0.25em;
+        border-bottom: 0.125em solid #3fffa2; }
+    /* line 58, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+    .cover .tb-cell cite {
+      font-family: "Pacifico", cursive;
+      color: #ffffff;
+      float: right;
+      font-size: 0.88889em;
+      line-height: 1.8125em; }
+      @media (min-width: 748px) {
+        /* line 58, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+        .cover .tb-cell cite {
+          margin-right: 32%; } }
+
+/* line 69, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+.d-quot {
+  margin-bottom: 0.25em; }
+  @media (min-width: 480px) and (max-width: 748px) and (orientation: landscape) {
+    /* line 69, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+    .d-quot {
+      width: 48.71795%;
+      float: left;
+      margin-right: 2.5641%; } }
+  @media (min-width: 480px) and (max-width: 748px) and (orientation: landscape) {
+    /* line 74, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+    .d-quot:nth-child(even) {
+      width: 48.71795%;
+      float: right;
+      margin-right: 0;
+      text-align: left; } }
+
+/* line 82, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+header h1 {
+  font-size: 1.66667em;
+  line-height: 1.45em; }
+  @media (min-width: 480px) and (max-width: 748px) and (orientation: landscape) {
+    /* line 82, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+    header h1 {
+      padding: 0; } }
+
+/* line 89, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+h2 {
+  font-size: 1.55556em;
+  line-height: 1.55357em;
+  padding-bottom: 1em;
+  font-weight: 900; }
+
+/* line 95, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+h3 {
+  font-size: 1.33333em;
+  line-height: 1.20833em; }
+
+/* line 99, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+h4 {
+  font-size: 1.11111em;
+  line-height: 1.45em; }
+
+/* line 103, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit; }
+  /* line 6, /home/puce/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+  a:active, a:focus {
+    outline: none; }
+
+/* line 107, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+ul {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0; }
+
+/* line 111, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+p {
+  padding: 1.61111em 0; }
+  /* line 113, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+  p strong {
+    font-weight: 900;
+    font-style: italic; }
+
+/* line 119, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+figcaption h3, figcaption p {
+  padding: 0.48333em; }
+
+/* line 125, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+.site_link li {
+  font-size: 1em;
+  line-height: 1.61111em;
+  padding: 0.40278em 0; }
+  /* line 128, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+  .site_link li a:hover {
+    font-weight: bold;
+    color: #3fffa2; }
+
+/* line 135, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_typography.scss */
+.btn {
+  line-height: 50px;
+  text-align: center;
+  font-family: "Cuprum", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-moz-keyframes contspin {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+@-webkit-keyframes contspin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+@keyframes contspin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+/* line 18, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+* {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+/* line 21, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+body {
+  color: #495559; }
+
+/* line 24, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+header {
+  background-color: #495559;
+  color: #ffffff; }
+
+/* line 28, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+footer {
+  background-color: #a6a2a2; }
+
+/* line 32, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; }
+  /* line 39, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+  #loader-wrapper #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 1500;
+    border-radius: 50%; }
+  /* line 49, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+  #loader-wrapper #loader-1, #loader-wrapper #loader-2, #loader-wrapper #loader-3 {
+    position: absolute;
+    border-radius: 50%; }
+    /* line 52, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+    #loader-wrapper #loader-1::before, #loader-wrapper #loader-2::before, #loader-wrapper #loader-3::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 5px solid #495559;
+      border-radius: 50%; }
+  /* line 61, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+  #loader-wrapper #loader-1 {
+    -moz-animation: contspin 1.8s linear infinite;
+    -webkit-animation: contspin 1.8s linear infinite;
+    animation: contspin 1.8s linear infinite;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px; }
+    /* line 66, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+    #loader-wrapper #loader-1::before {
+      border-top-color: #3fffa2; }
+  /* line 70, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+  #loader-wrapper #loader-2 {
+    -moz-animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    width: 120px;
+    height: 120px;
+    margin: -60px 0 0 -60px; }
+    /* line 75, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+    #loader-wrapper #loader-2::before {
+      border-top-color: #cfd2cd; }
+  /* line 79, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+  #loader-wrapper #loader-3 {
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    -moz-animation: spin 1.5s linear infinite;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite; }
+    /* line 84, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+    #loader-wrapper #loader-3::before {
+      border-bottom-color: #cfd2cd; }
+  /* line 88, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+  #loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background-color: #495559; }
+    /* line 94, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+    #loader-wrapper .loader-section.section-left {
+      left: 0; }
+    /* line 97, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+    #loader-wrapper .loader-section.section-right {
+      right: 0; }
+
+/* line 103, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.loaded #loader-wrapper .loader-section.section-left, .loaded #loader-wrapper .loader-section.section-right {
+  -moz-transition: all 0.3s ease-out 0.3s;
+  -o-transition: all 0.3s ease-out 0.3s;
+  -webkit-transition: all 0.3s ease-out;
+  -webkit-transition-delay: 0.3s;
+  transition: all 0.3s ease-out 0.3s; }
+/* line 106, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.loaded #loader-wrapper .loader-section.section-left {
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%); }
+/* line 109, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.loaded #loader-wrapper .loader-section.section-right {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%); }
+
+/* line 114, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.loaded #loader {
+  opacity: 0;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+/* line 118, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -moz-transition: all 0.3s ease-out 0.6s;
+  -o-transition: all 0.3s ease-out 0.6s;
+  -webkit-transition: all 0.3s ease-out;
+  -webkit-transition-delay: 0.6s;
+  transition: all 0.3s ease-out 0.6s; }
+
+/* line 124, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.no-js #loader-wrapper {
+  display: none; }
+
+/* line 127, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.f_warp {
+  position: relative;
+  margin-bottom: 1em;
+  padding-top: 1em; }
+
+/* line 132, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.form-label {
+  position: absolute;
+  pointer-events: none;
+  top: 1em;
+  line-height: 2em; }
+
+/* line 139, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.f_message {
+  float: left;
+  width: 100%; }
+
+/* line 144, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.form-input + .form-label {
+  padding: 0 1em;
+  color: #495559;
+  -moz-transform-origin: center left;
+  -ms-transform-origin: center left;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s; }
+  /* line 149, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+  .form-input + .form-label.writing {
+    color: #333333;
+    -moz-transform: scale(0.8) translateY(-40px);
+    -ms-transform: scale(0.8) translateY(-40px);
+    -webkit-transform: scale(0.8) translateY(-40px);
+    transform: scale(0.8) translateY(-40px); }
+
+/* line 154, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.form-input:focus + .form-label {
+  color: #333333;
+  -moz-transform: scale(0.8) translateY(-40px);
+  -ms-transform: scale(0.8) translateY(-40px);
+  -webkit-transform: scale(0.8) translateY(-40px);
+  transform: scale(0.8) translateY(-40px); }
+
+/* line 158, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.form-input, textarea {
+  border: 1px solid #8cb2a0; }
+
+/* line 161, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.form-input:focus, textarea:focus {
+  border-color: #3fffa2;
+  outline: none; }
+
+/* line 166, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+fieldset.btn {
+  padding: 0; }
+/* line 169, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+fieldset input[type="submit"] {
+  border: none;
+  background: #3fffa2;
+  color: #ffffff;
+  font-weight: bold;
+  outline: none;
+  line-height: 50px; }
+
+/* line 178, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.back-swiper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  z-index: 2; }
+
+/* line 185, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+.btn {
+  background: #3fffa2;
+  color: #ffffff; }
+
+/* line 189, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+figure {
+  border: 1px solid #495559;
+  color: #495559;
+  background: #e6e6e6; }
+  @media (min-width: 980px) {
+    /* line 189, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+    figure {
+      border: none; } }
+  /* line 196, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_general.scss */
+  figure figcaption {
+    background: #e6e6e6; }
+
+/* line 1, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+button,
+button:focus,
+button:active {
+  border: none;
+  outline: 0; }
+
+/* line 7, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  outline: none; }
+
+/* line 15, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+.btn-menu {
+  overflow: hidden;
+  *zoom: 1;
+  background: #495559;
+  padding: 0;
+  line-height: inherit;
+  width: auto;
+  padding: 1em;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s; }
+  @media (min-width: 748px) {
+    /* line 15, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+    .btn-menu {
+      margin-right: 1em; } }
+  /* line 26, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+  .btn-menu .icon-menu {
+    float: left;
+    width: 1em;
+    height: 2px;
+    background: #fff;
+    margin-right: 0.5em;
+    margin-top: 5px;
+    -moz-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    -webkit-transition: all, 0.5s;
+    transition: all, 0.5s; }
+    /* line 34, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+    .btn-menu .icon-menu::before, .btn-menu .icon-menu::after {
+      -moz-transition: all, 0.5s;
+      -o-transition: all, 0.5s;
+      -webkit-transition: all, 0.5s;
+      transition: all, 0.5s;
+      content: '';
+      display: block;
+      width: 1em;
+      height: 2px;
+      background: #fff; }
+    /* line 42, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+    .btn-menu .icon-menu::before {
+      margin-top: 6px; }
+    /* line 45, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+    .btn-menu .icon-menu::after {
+      margin-top: 4px; }
+  /* line 49, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+  .btn-menu.btn-open {
+    color: #3fffa2; }
+    /* line 51, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+    .btn-menu.btn-open .icon-menu, .btn-menu.btn-open .icon-menu::before, .btn-menu.btn-open .icon-menu::after {
+      background: #3fffa2; }
+    /* line 54, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+    .btn-menu.btn-open .icon-menu {
+      background: #495559; }
+      /* line 56, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+      .btn-menu.btn-open .icon-menu::after {
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin-top: -2px; }
+      /* line 60, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+      .btn-menu.btn-open .icon-menu::before {
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg); }
+
+/* line 68, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+.btn-menu:hover {
+  color: #3fffa2; }
+  /* line 70, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+  .btn-menu:hover .icon-menu, .btn-menu:hover .icon-menu::before, .btn-menu:hover .icon-menu::after {
+    background: #3fffa2; }
+  /* line 74, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+  .btn-menu:hover.btn-open .icon-menu {
+    background: #495559; }
+
+/* line 81, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+.menu {
+  overflow: hidden;
+  *zoom: 1;
+  width: 100%;
+  max-height: 0;
+  position: absolute;
+  top: 100%;
+  background: #495559;
+  border-top: 3px solid #3fffa2;
+  font-size: 1.2em;
+  line-height: 1.34259em;
+  text-align: center;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  /* line 91, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+  .menu .social-menu {
+    overflow: hidden;
+    *zoom: 1;
+    clear: both;
+    padding-top: 24px; }
+  /* line 97, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+  .menu.menu-open {
+    padding: 24px 0;
+    max-height: 18em;
+    overflow: hidden; }
+  /* line 102, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+  .menu li {
+    padding: 0.80556em 20%; }
+    @media (min-width: 480px) and (max-width: 748px) and (orientation: landscape) {
+      /* line 102, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+      .menu li {
+        width: 35.89744%;
+        float: left;
+        margin-right: 2.5641%;
+        margin: 0 0 0 10.25641%;
+        padding: 4% 0; } }
+    @media (min-width: 480px) and (max-width: 748px) and (orientation: landscape) {
+      /* line 109, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+      .menu li:nth-child(even) {
+        width: 35.89744%;
+        float: right;
+        margin-right: 0;
+        margin: 0 10.25641% 0 0;
+        padding: 4% 0; } }
+    @media (min-width: 980px) {
+      /* line 102, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+      .menu li {
+        width: 17.72152%;
+        float: left;
+        margin-right: 1.26582%;
+        padding: 0 0; }
+        /* line 119, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+        .menu li:first-child {
+          margin-left: 12.65823%; }
+        /* line 122, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+        .menu li:last-child {
+          margin-right: 0; } }
+  /* line 127, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+  .menu a {
+    display: block;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    /* line 130, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+    .menu a .line {
+      display: block;
+      width: 100%;
+      height: 0.05em;
+      background-color: #ffffff;
+      margin-top: 0.3em;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+      opacity: 0.2; }
+    /* line 139, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+    .menu a:hover {
+      color: #3fffa2; }
+      /* line 141, /home/puce/Documenti/projects/sebWebSite/source/stylesheets/_menu.scss */
+      .menu a:hover .line {
+        background-color: #3fffa2;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+        opacity: 0.8; }
